@@ -107,13 +107,9 @@ set tm=500
 syntax enable
 
 try
-	colorscheme desert
+	colorscheme monokai " https://github.com/sickill/vim-monokai
 catch
 endtry
-
-color desert
-
-set background=dark
 
 set cursorline
 hi clear CursorLine
