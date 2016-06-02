@@ -106,11 +106,6 @@ set tm=500
 " Enable syntax highlightning
 syntax enable
 
-try
-	colorscheme monokai " https://github.com/sickill/vim-monokai
-catch
-endtry
-
 set cursorline
 hi clear CursorLine
 
