@@ -14,10 +14,28 @@
 	"show_navigation_bar": false,
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": true,
+	"binary_file_patterns": [
+		"node_modules/*",
+		"bower_components/*",
+		"dist/*",
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
 	"index_exclude_patterns": [
-		"node_modules",
-		"bower_components",
-		"dist",
+		"node_modules/*",
+		"bower_components/*",
+		"dist/*",
 		"*.log"
 	],
 	"ignored_packages": [
