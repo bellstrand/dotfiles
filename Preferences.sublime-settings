@@ -1,0 +1,26 @@
+{
+	"always_show_minimap_viewport": true,
+	"default_line_ending": "unix",
+	"ensure_newline_at_eof_on_save": true,
+	"fallback_encoding": "UTF-8",
+	"font_size": 12,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"match_brackets_angle": true,
+	"scroll_past_end": true,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"shift_tab_unindent": true,
+	"show_navigation_bar": false,
+	"trim_trailing_white_space_on_save": true,
+	"vintage_start_in_command_mode": true,
+	"index_exclude_patterns": [
+		"node_modules",
+		"bower_components",
+		"dist",
+		"*.log"
+	],
+	"ignored_packages": [
+		"Vintage"
+	]
+}
