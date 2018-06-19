@@ -3,6 +3,7 @@
 	email = bellstrand@gmail.com
 [push]
 	default = simple
+	followTags = true
 [rerere]
 	enabled = true
 [branch]
