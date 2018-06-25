@@ -34,4 +34,4 @@
 	branch = magenta
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)%cn:%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-
+	spp = !git stash && git pull --rebase && git stash pop
