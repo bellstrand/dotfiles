@@ -1,0 +1,25 @@
+{
+    "files.associations": {
+        ".nycrc": "json"
+    },
+    "explorer.autoReveal": false,
+    "explorer.confirmDelete": false,
+    "git.autofetch": true,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 4,
+    "explorer.openEditors.visible": 0,
+    "search.exclude": {
+        "node_modules/": true,
+        "build/": true,
+        "dist/": true
+    },
+    "window.zoomLevel": 0,
+    "git.confirmSync": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "editor.minimap.enabled": true,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+}
