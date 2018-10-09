@@ -22,4 +22,8 @@
     "editor.minimap.enabled": true,
     "editor.renderWhitespace": "none",
     "editor.renderControlCharacters": false,
+    "files.exclude": {
+        "**/.nyc_output": true
+    },
+    "workbench.statusBar.feedback.visible": false,
 }
