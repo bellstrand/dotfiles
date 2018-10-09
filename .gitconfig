@@ -1,6 +1,8 @@
 [user]
 	name = Magnus Bellstrand
 	email = bellstrand@gmail.com
+[pull]
+	rebase = true
 [push]
 	default = simple
 	followTags = true
