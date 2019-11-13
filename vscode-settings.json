@@ -1,29 +1,67 @@
 {
-    "files.associations": {
-        ".nycrc": "json"
-    },
-    "explorer.autoReveal": false,
-    "explorer.confirmDelete": false,
-    "git.autofetch": true,
-    "editor.insertSpaces": false,
-    "editor.tabSize": 4,
-    "explorer.openEditors.visible": 0,
-    "search.exclude": {
-        "node_modules/": true,
-        "build/": true,
-        "dist/": true
-    },
-    "window.zoomLevel": 0,
-    "git.confirmSync": false,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "explorer.confirmDragAndDrop": false,
-    "workbench.statusBar.visible": true,
-    "workbench.activityBar.visible": true,
-    "editor.minimap.enabled": true,
-    "editor.renderWhitespace": "none",
-    "editor.renderControlCharacters": false,
-    "files.exclude": {
-        "**/.nyc_output": true
-    },
-    "workbench.statusBar.feedback.visible": false,
+  "files.associations": {
+    ".nycrc": "json"
+  },
+  "explorer.autoReveal": false,
+  "explorer.confirmDelete": false,
+  "git.autofetch": true,
+  "editor.insertSpaces": false,
+  "editor.tabSize": 4,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "yaml.format.bracketSpacing": false,
+  "explorer.openEditors.visible": 0,
+  "search.exclude": {
+    "**/node_modules/": true,
+    "**/build/": true,
+    "**/dist/": true,
+    "**/.gradle/": true,
+    "**/bin/": true,
+    "**/__snapshots__": true,
+    "**/coverage/": true
+  },
+  "window.zoomLevel": 0,
+  "git.confirmSync": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": true,
+  "editor.minimap.enabled": true,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "files.exclude": {
+    "**/.gradle": true,
+    "**/bin": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "**/__snapshots__": true,
+    "**/coverage": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/build/": true,
+    "**/dist/": true,
+    "**/.gradle/": true,
+    "**/bin/": true,
+    "**/__snapshots__": true,
+    "**/coverage/": true,
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.suggestSelection": "first",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "FiraCode-Retina, Menlo, Monaco, 'Courier New', monospace",
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
