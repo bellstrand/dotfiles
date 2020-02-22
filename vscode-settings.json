@@ -52,7 +52,7 @@
     "**/.gradle/": true,
     "**/bin/": true,
     "**/__snapshots__": true,
-    "**/coverage/": true,
+    "**/coverage/": true
   },
   "workbench.startupEditor": "newUntitledFile",
   "editor.suggestSelection": "first",
