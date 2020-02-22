@@ -14,6 +14,7 @@
   "yaml.format.bracketSpacing": false,
   "explorer.openEditors.visible": 0,
   "search.exclude": {
+    "**/.git": true,
     "**/node_modules/": true,
     "**/build/": true,
     "**/dist/": true,
@@ -32,6 +33,7 @@
   "editor.renderWhitespace": "none",
   "editor.renderControlCharacters": false,
   "files.exclude": {
+    "**/.git": true,
     "**/.gradle": true,
     "**/bin": true,
     "**/.classpath": true,
@@ -63,5 +65,7 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "git.ignoreMissingGitWarning": true,
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }
