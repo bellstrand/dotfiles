@@ -38,4 +38,4 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)%cn:%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	tg = tag --sort=committerdate
 	spp = !git stash && git pull --rebase && git stash pop
-	sweep = !git branch --merged $([[ $1 != \"-f\" ]] && git rev-parse dev) | egrep -v \"(^\\*|^\\s*(master|dev)$)\" | xargs git branch -d
+	sweep = !git fetch -p && git branch -vv | grep origin | grep gone | awk '{print $1}' | xargs -L 1 git branch -D
