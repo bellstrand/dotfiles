@@ -4,16 +4,30 @@
 [pull]
 	rebase = true
 [push]
-	default = simple
+	default = current
 	followTags = true
 [rerere]
 	enabled = true
 [branch]
 	autosetuprebase = always
 [core]
+	# pager = cat
 	editor = vim
 	quotepath = false
 	whitespace = fix,-indent-with-non-tab,space-before-tab,trailing-space,cr-at-eol
+[diff]
+	mnemonicPrefix = true
+	renames = true
+	wordRegex = .
+[tag]
+	sort = version:refname
+[versionsort]
+	prereleaseSuffix = -pre
+	prereleaseSuffix = .pre
+	prereleaseSuffix = -beta
+	prereleaseSuffix = .beta
+	prereleaseSuffix = -rc
+	prereleaseSuffix = .rc
 [color]
 	ui = auto
 	branch = auto
@@ -35,6 +49,17 @@
 	untracked = red
 	branch = magenta
 [alias]
+	ci = commit
+	co = checkout
+	st = status
+
+	oops = commit --amend --no-edit
+	push-with-lease = push --force-with-lease
+
+	review-local = "!git lg @{push}.."
+	reword = commit --amend
+	uncommit = reset --soft HEAD~1
+
 	lg = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)%cn:%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	tg = tag --sort=committerdate
 	spp = !git stash && git pull --rebase && git stash pop
