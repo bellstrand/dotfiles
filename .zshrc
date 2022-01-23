@@ -1,4 +1,4 @@
-export ZSH="/Users/me/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="agnoster"
 plugins=(
 	git
@@ -15,9 +15,11 @@ bindkey -e
 autoload -U promptinit
 promptinit
 
+autoload -Uz compinit
+compinit
+
 . ~/.shell/aliases
 . ~/.shell/completions
 . ~/.shell/functions
 . ~/.shell/prompt
 . ~/.shell/variables
-

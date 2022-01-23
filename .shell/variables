@@ -32,5 +32,3 @@ if [ -z SHOPT ]; then
 	shopt -s extglob
 fi
 set ignoreeof on
-
-export JAVA_HOME="$(/usr/libexec/java_home)"
