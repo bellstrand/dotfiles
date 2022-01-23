@@ -1,6 +1,9 @@
 [user]
 	name = Magnus Bellstrand
 	email = bellstrand@gmail.com
+	signingkey = 409A82963F955D14
+[commit]
+	gpgsign = true
 [pull]
 	rebase = true
 [push]
