@@ -8,7 +8,7 @@ plugins=(
 )
 source $ZSH/oh-my-zsh.sh
 
-setopt appendhistory autocd nomatch autopushd pushdignoredups promptsubst
+setopt appendhistory histignoredups histignorespace autocd nomatch autopushd pushdignoredups promptsubst
 unsetopt beep
 bindkey -e
 
@@ -23,3 +23,13 @@ compinit
 . ~/.shell/functions
 . ~/.shell/prompt
 . ~/.shell/variables
+
+case "$OSTYPE" in
+  linux*)   . ~/.shell/os/linux ;;
+  darwin*)  . ~/.shell/os/osx ;;
+  bsd*)     . ~/.shell/os/bsd ;;
+  solaris*) . ~/.shell/os/solaris ;;
+  msys*)    . ~/.shell/os/windows ;;
+  cygwin*)  . ~/.shell/os/windows ;;
+  *)        echo "unknown: $OSTYPE" ;;
+esac

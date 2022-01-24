@@ -1,0 +1,31 @@
+# Determine size of a file or total size of a directory
+function fs() {
+	if du -b /dev/null > /dev/null 2>&1; then
+		local arg=-sbh;
+	else
+		local arg=-sh;
+	fi
+	if [[ -n "$@" ]]; then
+		du $arg -- "$@";
+	else
+		du $arg .[^.]* ./*;
+	fi;
+}
+
+# Normalize `open` across Linux, macOS, and Windows.
+if [ ! $(uname -s) = 'Darwin' ]; then
+	if grep -q microsoft /proc/version; then
+		# Linux on Windows using WSL
+		alias open='explorer.exe';
+	else
+		alias open='xdg-open';
+	fi
+fi
+
+function o() {
+	if [ $# -eq 0 ]; then
+		open .;
+	else
+		open "$@";
+	fi;
+}

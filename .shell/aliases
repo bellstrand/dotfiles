@@ -16,6 +16,15 @@ alias df='df -h'
 alias du='du -h -c'
 alias clr='clear;echo "Currently logged in on $(tty), as $(whoami) in directory $(pwd)."'
 
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+# Date Utils
+alias week='date +%V'
+
 # Docker
 alias dps='docker ps -a --format "table {{.Names}}\t{{.Image}}\t{{.ID}}\t{{.Status}}"'
 alias dstats="docker ps|grep -v 'NAMES'|awk '{ print $NF }'|tr '\n' ' ' | docker stats"
@@ -28,15 +37,9 @@ alias youtube-dl-mp4='youtube-dl -f "bestvideo[ext=mp4][vcodec!*=av01]+bestaudio
 alias yt-dlp-mp3='yt-dlp -x --audio-format mp3'
 alias yt-dlp-mp4='yt-dlp -f "bestvideo[ext=mp4][vcodec!*=av01]+bestaudio[ext=m4a]/best[ext=mp4]/best"'
 
-alias homm3hd="cd '/Users/me/.wine/drive_c/GOG Games/Heroes of Might and Magic 3 Complete/' && wine HD_Launcher.exe"
-
-# Top
-alias top="top -o cpu"
-
 # Postgres
 alias pgstart="pg_ctl -D /usr/local/var/postgres start"
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop"
 
 # Yarn
 alias yarnyarn="yarn"
-
